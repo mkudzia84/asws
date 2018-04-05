@@ -1,0 +1,50 @@
+<sym-test app-name="%APP_NAME_HERE%" username="%USERNAME%" password="%PASSWORD%">
+   <client-thread name="thread-1">
+           <session name="session" sym-session-name="SimpleWorkload" sym-type="sync-overlapped" 
+		       sym-common-data-size="2100293">
+               <repeat n-times="10000">
+                   <task workload-type="workload_idle">
+                       <param name="runtime">0</param>
+                       <param name="inpSize">128048</param>
+                       <param name="outSize">4048</param>
+                   </task>
+               </repeat>
+           </session>
+    </client-thread>
+	   <client-thread name="thread-3">
+           <session name="session" sym-session-name="SimpleWorkload" sym-type="sync-overlapped" 
+		       sym-common-data-size="2100293">
+               <repeat n-times="10000">
+                   <task workload-type="workload_idle">
+                       <param name="runtime">0</param>
+                       <param name="inpSize">12048</param>
+                       <param name="outSize">1048</param>
+                   </task>
+               </repeat>
+           </session>
+		       </client-thread>
+		      <client-thread name="thread-2">
+           <session name="session" sym-session-name="SimpleWorkload" sym-type="sync-overlapped" 
+		       sym-common-data-size="2100293">
+               <repeat n-times="10000">
+                   <task workload-type="workload_idle">
+                       <param name="runtime">0</param>
+                       <param name="inpSize">28048</param>
+                       <param name="outSize">48</param>
+                   </task>
+               </repeat>
+           </session>
+		       </client-thread>
+		      <client-thread name="thread-4">
+           <session name="session" sym-session-name="SimpleWorkload" sym-type="sync-overlapped" 
+		       sym-common-data-size="2100293">
+               <repeat n-times="10000">
+                   <task workload-type="workload_idle">
+                       <param name="runtime">0</param>
+                       <param name="inpSize">2048</param>
+                       <param name="outSize">148</param>
+                   </task>
+               </repeat>
+           </session>
+		       </client-thread>
+</sym-test>

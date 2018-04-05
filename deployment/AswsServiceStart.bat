@@ -1,0 +1,1 @@
+aswsservice.exe > aswsservice.log 2> aswsservice.err

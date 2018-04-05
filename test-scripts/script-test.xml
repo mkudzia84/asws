@@ -1,0 +1,12 @@
+<sym-test app-name="%APP_NAME_HERE%" username="%USERNAME%" password="%PASSWORD%">
+   <client-thread name="thread-1">
+           <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped">
+               <repeat n-times="10">
+                   <task workload-type="linpack_benchmark">
+                       <param name="nReps">100</param>
+                       <param name="arraySize">2048</param>
+                   </task>
+               </repeat>
+           </session>
+    </client-thread>
+</sym-test>

@@ -1,0 +1,15 @@
+<sym-test app-name="%APP_NAME_HERE%" username="%USERNAME%" password="%PASSWORD%">
+   <client-thread name="thread-1">
+       <repeat n-times="1">
+           <session name="session" sym-session-name="SimpleWorkload" sym-type="sync">
+               <repeat n-times="10">
+                   <task workload-type="workload_idle">
+                       <param name="runtime">1000</param>
+                       <param name="inpSize">1024</param>
+                       <param name="outSize">1024</param>
+                   </task>
+               </repeat>
+           </session>
+        </repeat>
+    </client-thread>
+</sym-test>

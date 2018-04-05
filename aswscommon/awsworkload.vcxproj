@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{672217C9-45FB-454F-8739-947C50FCA05E}</ProjectGuid>
+    <RootNamespace>awsworkload</RootNamespace>
+    <ProjectName>aswscommon</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\apps_local\boost_1_63_0;C:\apps_local\Platform SymphonyDE\DE71\7.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\apps_local\boost_1_63_0;C:\apps_local\Platform SymphonyDE\DE71\7.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\APPS_LOCAL\3rdPartyLibs\boost_1_55_0;C:\APPS_LOCAL\SymphonyDE\DE51\5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\apps_local\boost_1_63_0;C:\apps_local\Platform SymphonyDE\DE71\7.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="client\batch\grid_client.h" />
+    <ClInclude Include="client\batch\interface_isession.h" />
+    <ClInclude Include="client\batch\interface_itask_queue.h" />
+    <ClInclude Include="client\batch\session.h" />
+    <ClInclude Include="client\batch\session_scheduler.h" />
+    <ClInclude Include="client\batch\task.h" />
+    <ClInclude Include="client\batch\task_repeater.h" />
+    <ClInclude Include="client\batch\task_sequence.h" />
+    <ClInclude Include="client\batch\worker.h" />
+    <ClInclude Include="client\batch\worker_pool.h" />
+    <ClInclude Include="client\symphony\async_session.h" />
+    <ClInclude Include="client\symphony\bookkeeper.h" />
+    <ClInclude Include="client\symphony\interface_isession.h" />
+    <ClInclude Include="client\symphony\session_attributes.h" />
+    <ClInclude Include="client\symphony\session_flags.h" />
+    <ClInclude Include="client\symphony\soam_client.h" />
+    <ClInclude Include="client\symphony\sync_session.h" />
+    <ClInclude Include="common\format\prefix_stream.h" />
+    <ClInclude Include="common\pattern\factory.h" />
+    <ClInclude Include="common\pattern\function_stack.h" />
+    <ClInclude Include="common\pattern\singleton.h" />
+    <ClInclude Include="common\pattern\singleton_ts.h" />
+    <ClInclude Include="common\random\generators.h" />
+    <ClInclude Include="common\xml\xml_rule_set.h" />
+    <ClInclude Include="common\xml\xml_traverser.h" />
+    <ClInclude Include="workload\factory.h" />
+    <ClInclude Include="workload\common_data.h" />
+    <ClInclude Include="workload\idle_workload.h" />
+    <ClInclude Include="workload\interface_iworkload.h" />
+    <ClInclude Include="workload\linpack_workload.h" />
+    <ClInclude Include="workload\serialization\serialization.h" />
+    <ClInclude Include="workload\serialization\binary_archive.h" />
+    <ClInclude Include="workload\serialization\soam_istream.h" />
+    <ClInclude Include="workload\serialization\soam_ostream.h" />
+    <ClInclude Include="workload\symphony\message.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="client\batch\grid_client.cpp" />
+    <ClCompile Include="client\batch\session.cpp" />
+    <ClCompile Include="client\batch\session_scheduler.cpp" />
+    <ClCompile Include="client\batch\worker.cpp" />
+    <ClCompile Include="client\batch\worker_pool.cpp" />
+    <ClCompile Include="client\symphony\async_session.cpp" />
+    <ClCompile Include="client\symphony\bookkeeper.cpp" />
+    <ClCompile Include="client\symphony\soam_client.cpp" />
+    <ClCompile Include="client\symphony\sync_session.cpp" />
+    <ClCompile Include="common\format\prefix_stream.cpp" />
+    <ClCompile Include="common\random\generators.cpp" />
+    <ClCompile Include="common\xml\xml_rule_set.cpp" />
+    <ClCompile Include="common\xml\xml_traverser.cpp" />
+    <ClCompile Include="workload\idle_workload.cpp" />
+    <ClCompile Include="workload\linpack.c" />
+    <ClCompile Include="workload\linpack_workload.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\workload">
+      <UniqueIdentifier>{f04e9b5c-4ee1-49c0-899e-a408bfd08adb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\workload">
+      <UniqueIdentifier>{5af85722-aa0f-4602-ab35-998c4451300f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\client">
+      <UniqueIdentifier>{65b9cb0f-7ae2-442a-8a9b-a6a719790e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\client\batch">
+      <UniqueIdentifier>{de8b75fc-4550-48f4-8f54-368dbebbfd93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\client\symphony">
+      <UniqueIdentifier>{a3104cbc-5484-4fd1-9dfa-07db7250dabc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\workload\symphony">
+      <UniqueIdentifier>{960ebf77-0662-4740-98c2-e7eda9a7d3a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\workload\serialization">
+      <UniqueIdentifier>{4618e5de-a417-48d2-9663-a9aefc08ac4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client">
+      <UniqueIdentifier>{2077572d-b9f3-4a13-be61-0ab585b907ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\batch">
+      <UniqueIdentifier>{5a147cce-10f5-4edf-bbb1-b07a29b540bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\client\symphony">
+      <UniqueIdentifier>{cf8bd06e-3bd2-4fd0-86e8-5d0cf154558b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{251521c9-4275-445f-b542-c0bc789ce442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\format">
+      <UniqueIdentifier>{916e55ae-1a5e-42ed-83a1-850f070adb0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{e5ddc897-da4c-4632-b6bf-591b7e25062d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\format">
+      <UniqueIdentifier>{c52a8674-413a-4367-984e-2eb8bdaa3a0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\pattern">
+      <UniqueIdentifier>{80c74f64-d9d5-492d-ae47-f467d2846fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\random">
+      <UniqueIdentifier>{fc973efb-da5e-464e-bcb4-8448e6705f70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\random">
+      <UniqueIdentifier>{29d11b11-b526-430b-8ec8-252083e88b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\common\xml">
+      <UniqueIdentifier>{540103cc-53b9-4e66-995b-ee731056ffba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common\xml">
+      <UniqueIdentifier>{c2280e3d-36f1-4929-a6bc-87d0266a7e7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="workload\interface_iworkload.h">
+      <Filter>Header Files\workload</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\idle_workload.h">
+      <Filter>Header Files\workload</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\factory.h">
+      <Filter>Header Files\workload</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\worker_pool.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\grid_client.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\session.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\session_scheduler.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\task_sequence.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\worker.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\symphony\sync_session.h">
+      <Filter>Header Files\client\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="client\symphony\bookkeeper.h">
+      <Filter>Header Files\client\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="client\symphony\interface_isession.h">
+      <Filter>Header Files\client\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="client\symphony\session_attributes.h">
+      <Filter>Header Files\client\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="client\symphony\session_flags.h">
+      <Filter>Header Files\client\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="client\symphony\soam_client.h">
+      <Filter>Header Files\client\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\symphony\message.h">
+      <Filter>Header Files\workload\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\task.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\interface_isession.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\interface_itask_queue.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="client\batch\task_repeater.h">
+      <Filter>Header Files\client\batch</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\common_data.h">
+      <Filter>Header Files\workload</Filter>
+    </ClInclude>
+    <ClInclude Include="client\symphony\async_session.h">
+      <Filter>Header Files\client\symphony</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\serialization\soam_istream.h">
+      <Filter>Header Files\workload\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\serialization\soam_ostream.h">
+      <Filter>Header Files\workload\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\serialization\serialization.h">
+      <Filter>Header Files\workload\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\serialization\binary_archive.h">
+      <Filter>Header Files\workload\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="workload\linpack_workload.h">
+      <Filter>Header Files\workload</Filter>
+    </ClInclude>
+    <ClInclude Include="common\format\prefix_stream.h">
+      <Filter>Header Files\common\format</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pattern\factory.h">
+      <Filter>Header Files\common\pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pattern\function_stack.h">
+      <Filter>Header Files\common\pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pattern\singleton.h">
+      <Filter>Header Files\common\pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="common\pattern\singleton_ts.h">
+      <Filter>Header Files\common\pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="common\random\generators.h">
+      <Filter>Header Files\common\random</Filter>
+    </ClInclude>
+    <ClInclude Include="common\xml\xml_traverser.h">
+      <Filter>Header Files\common\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="common\xml\xml_rule_set.h">
+      <Filter>Header Files\common\xml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="workload\idle_workload.cpp">
+      <Filter>Source Files\workload</Filter>
+    </ClCompile>
+    <ClCompile Include="client\batch\session_scheduler.cpp">
+      <Filter>Source Files\client\batch</Filter>
+    </ClCompile>
+    <ClCompile Include="client\batch\worker.cpp">
+      <Filter>Source Files\client\batch</Filter>
+    </ClCompile>
+    <ClCompile Include="client\batch\worker_pool.cpp">
+      <Filter>Source Files\client\batch</Filter>
+    </ClCompile>
+    <ClCompile Include="client\batch\session.cpp">
+      <Filter>Source Files\client\batch</Filter>
+    </ClCompile>
+    <ClCompile Include="client\symphony\bookkeeper.cpp">
+      <Filter>Source Files\client\symphony</Filter>
+    </ClCompile>
+    <ClCompile Include="client\symphony\soam_client.cpp">
+      <Filter>Source Files\client\symphony</Filter>
+    </ClCompile>
+    <ClCompile Include="client\symphony\sync_session.cpp">
+      <Filter>Source Files\client\symphony</Filter>
+    </ClCompile>
+    <ClCompile Include="client\batch\grid_client.cpp">
+      <Filter>Source Files\client\batch</Filter>
+    </ClCompile>
+    <ClCompile Include="client\symphony\async_session.cpp">
+      <Filter>Source Files\client\symphony</Filter>
+    </ClCompile>
+    <ClCompile Include="workload\linpack_workload.cpp">
+      <Filter>Source Files\workload</Filter>
+    </ClCompile>
+    <ClCompile Include="workload\linpack.c">
+      <Filter>Source Files\workload</Filter>
+    </ClCompile>
+    <ClCompile Include="common\format\prefix_stream.cpp">
+      <Filter>Source Files\common\format</Filter>
+    </ClCompile>
+    <ClCompile Include="common\random\generators.cpp">
+      <Filter>Source Files\common\random</Filter>
+    </ClCompile>
+    <ClCompile Include="common\xml\xml_rule_set.cpp">
+      <Filter>Source Files\common\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="common\xml\xml_traverser.cpp">
+      <Filter>Source Files\common\xml</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

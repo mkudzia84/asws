@@ -1,0 +1,143 @@
+<sym-test app-name="%APP_NAME_HERE%" username="%USERNAME%" password="%PASSWORD%">
+	<!-- Each worker 100 core*hours of total workload (360,000 core seconds of workload) -->
+	
+	<!-- total payload for session worker thread: 
+		1.3MB per session
+		8.5GB total
+	-->
+  <client-thread name="thread-1">
+    <repeat n-times="10">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="102443">
+        <repeat n-times="25000">
+          <task workload-type="workload_idle">
+              <param name="runtime">0</param>
+              <param name="minInputSize">1524</param>
+              <param name="maxInputSize">12524</param>
+              <param name="minOutputSize">849</param>
+              <param name="maxOutputSize">3849</param>
+          </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>
+	
+	<!-- total payload for session worker thread:
+		428 MB (mostly payload)
+	-->
+  <client-thread name="thread-2">
+    <repeat n-times="9">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="5679043">
+        <repeat n-times="50000">
+          <task workload-type="workload_idle">
+            <param name="runtime">0</param>
+            <param name="minInputSize">10524</param>
+            <param name="maxInputSize">38424</param>
+            <param name="minOutputSize">249</param>
+            <param name="maxOutputSize">819</param>
+          </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>
+	
+	<!-- total payload for session worker thread:
+		6.4GB (mostly common data)
+	-->
+  <client-thread name="thread-3">
+    <repeat n-times="8">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="1079043">
+        <repeat n-times="25000">
+            <task workload-type="workload_idle">
+              <param name="runtime">0</param>
+              <param name="minInputSize">33524</param>
+              <param name="maxInputSize">88424</param>
+              <param name="minOutputSize">16</param>
+              <param name="maxOutputSize">76</param>
+            </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>
+	<!-- total payload for session worker thread:
+		5.1GB (mostly common data)
+	-->
+  <client-thread name="thread-4">
+    <repeat n-times="7">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="109043">
+        <repeat n-times="25000">
+          <task workload-type="workload_idle">
+            <param name="runtime">0</param>
+            <param name="minInputSize">21524</param>
+            <param name="maxInputSize">38424</param>
+            <param name="minOutputSize">249</param>
+            <param name="maxOutputSize">1083</param>
+          </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>
+  <!-- total payload for session worker thread:
+  5GB total
+  141 MB per session
+  -->
+  <client-thread name="thread-5">
+    <repeat n-times="6">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="23079043">
+        <repeat n-times="15000">
+          <task workload-type="workload_idle">
+            <param name="runtime">0</param>
+            <param name="minInputSize">221524</param>
+            <param name="maxInputSize">310393</param>
+            <param name="minOutputSize">17033</param>
+            <param name="maxOutputSize">41393</param>
+          </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>
+  <client-thread name="thread-6">
+    <repeat n-times="5">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="102443">
+        <repeat n-times="25000">
+          <task workload-type="workload_idle">
+            <param name="runtime">0</param>
+            <param name="minInputSize">10324</param>
+            <param name="maxInputSize">21424</param>
+            <param name="minOutputSize">110249</param>
+            <param name="maxOutputSize">134819</param>
+          </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>   
+  <client-thread name="thread-6">
+    <repeat n-times="4">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="102443">
+        <repeat n-times="25000">
+          <task workload-type="workload_idle">
+            <param name="runtime">0</param>
+            <param name="minInputSize">64524</param>
+            <param name="maxInputSize">85424</param>
+            <param name="minOutputSize">122249</param>
+            <param name="maxOutputSize">158819</param>
+          </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>
+  <client-thread name="thread-8">
+    <repeat n-times="3">
+      <session name="session" sym-session-name="SimpleWorkload" sym-type="async-overlapped"  sym-common-data-size="102443">
+        <repeat n-times="25000">
+          <task workload-type="workload_idle">
+            <param name="runtime">0</param>
+            <param name="minInputSize">8524</param>
+            <param name="maxInputSize">12424</param>
+            <param name="minOutputSize">249</param>
+            <param name="maxOutputSize">1029</param>
+          </task>
+        </repeat>
+      </session>
+    </repeat>
+  </client-thread>
+</sym-test>
