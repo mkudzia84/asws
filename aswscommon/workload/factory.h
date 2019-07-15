@@ -7,8 +7,8 @@
 
 #include "interface_iworkload.h"
 
-#include "../../common/pattern/factory.h"
-#include "../../common/pattern/singleton.h"
+#include "../common/pattern/factory.h"
+#include "../common/pattern/singleton.h"
 
 //--------------------------------------------------------------------------------
 

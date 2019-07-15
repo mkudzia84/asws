@@ -9,7 +9,7 @@ CFLAGS							= $(OPT_FLAGS) $(WARNING_FLAGS) -c
 ARFLAGS                         = --target=elf64-x86-64
 
 SRCS = $(shell find . -name '*.cpp') 
-INCLUDES = -I../3rdparty/boost_1_63_0/ -I/opt/ibm/platformsymphonyde/de71/7.1/include/
+INCLUDES = -I../3rdparty/boost_1_63_0/ -I/opt/ibm/spectrumcomputing/symphonyde/de721/7.2.1/include/
 
 LINPACK_SRCS = $(shell find . -name '*.c')
 
